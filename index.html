@@ -1,58 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Хочешь что-то получить - не уходи </title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title> А ты купи слона </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-	<script src="js/bootstrap.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 </head>
 <body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
   <div class="container">
-  <nav class="navbar" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-      <a class="navbar-brand" href="#">NoItemC</a>
-    </div>
-	</div>
-  </nav>
   <div class="row">
-  <h1 class="text-center font-Raleway">Новый уникальный метод одной известной функции!</h1>
-  <h3 class="text-center font-Raleway">Прямо сейчас выясните, что это</h3>
-  <p class="text-center font-Raleway">Заполните анкету и вы получите всю информацию через несколько минут</p>
-  <div class="col-md-4 col-md-offset-8">
-  <form role="form">
-	<div class="form-group">
+  <h1 class="center-align font-Raleway flow-text">Купи слона!</h1>
+  <h3 class="center-align font-Raleway flow-text">Прямо сейчас</h3>
+  <p class="center-align font-Raleway flow-text">Заполните анкету и вы получите всю информацию через несколько минут</p>
+  <div class="col s4 offset-s8">
+  <form>
+  <div class="row">
+	<div class="input-field">
+		<input type="text" class="validate" name="name" id="name_user">
 		<label for="name_user">Имя</label>
-		<input type="text" class="form-control" name="name" id="name_user" placeholder="введите имя..">
 	</div>
-	<div class="form-group">
-		<label for="email-user">E-mail</label>
-		<input type="text" class="form-control" name="email" id="email-user" placeholder="введите эл.почту..">
+	<div class="input-field">
+		<input type="email" class="validate" name="email" id="email-user">
+		<label for="email-user" data-error="wrong" data-success="right">E-mail</label>
 	</div>
-	<div class="form-group">
+	<div class="input-field">
+		<input type="tel" class="validate" name="phone_num" id="phone_num_user">
 		<label for "phone_num_user">Телефон</label>
-		<input type="text" class="form-control" name="phone_num" id="phone_num_user" placeholder="введите телефон..">
 	</div>
-	<div class="form-group">
+	<div class="input-field">
+		<textarea class="materialize-textarea" rows="3" name="other_information" id="other_information_user"></textarea>
 		<label for="other_information_user">Доп. информация</label>
-		<textarea class="form-control" rows="3" name="other_information" id="other_information_user" placeholder="введите информацию, которую хотите сообщить.."></textarea>
 	</div>
-	<div class="checkbox">
-		<label>
-			<input type="checkbox" name="get_messages" id="get_msg_user" checked>Получать рассылку
-		</label>
-	</div>
+	<p>
+		<input class="filled-in blue" type="checkbox" name="get_messages" id="get_msg_user" checked="checked">
+		<label for="get_msg_user">Получать рассылку
+	</p>
 	<button type="submit" class="btn btn-default">Отправить</button>
+  </div>
   </form>
   </div>
 	
