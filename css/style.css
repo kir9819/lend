@@ -1,8 +1,9 @@
-﻿body {
+﻿/*body {
 	background: url("../images/1.jpg") no-repeat fixed ;
 	background-size: cover;
 	color: white !important;
 }
+
 /*.font-Raleway {
 	font-family: "Raleway" !important;
 }
@@ -10,8 +11,17 @@
 	font-family: "Raleway" !important;
 }*/
 
+body {
+	background-color: #bbdefb;
+}
+.slider {
+	margin-top: 1em;
+}
 
-
+.img-slider {
+	background-color: black;
+	opacity: 0.6;
+}
 @font-face {
 	font-family: "Raleway";
 	src: url("../fonts/Raleway-v4020-Thin.otf") format("truetype");
