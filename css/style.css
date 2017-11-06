@@ -10,16 +10,30 @@ label {
 	font-family: "Raleway" !important;
 }*/
 
+.scroll_nav {
+	/*height: 20px !important; */
+}
+
 body {
-	background-color: #bbdefb;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+body {
+	background-color: #e1f5fe;
 }
 .slider {
 	margin-top: 1em;
 }
 
 .img-slider {
-	background-color: black;
-	opacity: 0.6;
+	/* background-color: black; */
+	/* opacity: 0.6; */
 }
 @font-face {
 	font-family: "Raleway";
