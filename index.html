@@ -10,14 +10,19 @@
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 </head>
 <body>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script> 
 $(document).ready(function(){
+  var a = window.innerHeight;
   $('.slider').slider({
   indicators: false,
-  height: 450,
+  height: a,
   interval: 4000});
+  var s = "min-height: " + a + "px;";
+  var e = document.getElementById("centerBlock");
+  <!-- $('.three-col').style.minHeight = a; -->
+  e.style.cssText=s;
 });
 </script>
 <script>
@@ -30,61 +35,100 @@ $(window).scroll(function() {
   }
 });
 </script>
-<div class="navbar-fixed">
-  <nav class="blue">
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
-<div class="container">
-  <div class="row">
+<!-- <script type="text/javascript" scr="js/scroll.js"></script> -->
+<!-- <div class="navbar-fixed"> -->
+  <!-- <nav class="blue"> -->
+    <!-- <div class="nav-wrapper"> -->
+      <!-- <a href="#" class="brand-logo">Logo</a> -->
+      <!-- <ul id="nav-mobile" class="right hide-on-med-and-down"> -->
+        <!-- <li><a href="sass.html">Sass</a></li> -->
+        <!-- <li><a href="badges.html">Components</a></li> -->
+        <!-- <li><a href="collapsible.html">JavaScript</a></li> -->
+      <!-- </ul> -->
+    <!-- </div> -->
+  <!-- </nav> -->
+<!-- </div> -->
+
   <!--SLIDER with 3-4 pict-->
-  <div class="slider col s12 m10 offset-m1">
+<div class="slider">
     <ul class="slides">
 	  <li>
 	    <img class="img-slider" src="images/pig1.jpg">
 		<div class="caption right-align">
-		  <h3>Свинья - всегда тема</h3>
-		  <h5 class="light grey-text text-lighten-3">Без свиньи и жизнь скучна</h5>
+		  <h3>Вам необходимо</h3>
+		  <h5 class="light grey-text text-lighten-3">купить свинью</h5>
 		</div>
+
 	  </li>
 	  <li>
 	    <img class="img-slider" src="images/pig2.jpg">
 		<div class="caption right-align">
 		  <h3>Эти животные рождены,</h3>
 		  <h5 class="light grey-text text-lighten-3">чтобы быть вашими друзьями</h5>
+		  
 		</div>
 	  </li>
 	  <li>
-	    <img class="img-slider" src="images/pig3.jpg">
+	    <img class="img-slider" src="images/pig4.0.png">
 		<div class="caption right-align">
-		  <h3>А ещё</h3>
-		  <h5 class="light grey-text text-lighten-3">её можно одеть</h5>
+		  <h3>Поросёнок привнесёт</h3>
+		  <h5 class="light grey-text text-lighten-3">в вашу жизнь милоты</h5>
 		</div>
 	  </li>
 	</ul>
   </div>
-  <div class="col s12 center-align">
-    <h1 class="center-align font-Raleway flow-text cyan-text text-darken-4">Купи свинью!</h1>
-    <h3 class="center-align font-Raleway flow-text">Прямо сейчас</h3>
-    <p class="center-align font-Raleway flow-text">Заполните анкету и вы получите всю информацию через несколько минут</p>
-  </div>
-  <!-- 3 col with pict or icons -->
-  <div class="row">
+  
+<!--
+3 col with pict or icons
+--> 
+
+<div class="container">
+  <div class="row valign-wrapper" id="centerBlock">
+  <div>
     <div class="col s12 m4">
+	  <div class="center promo">
+	    <!-- <img class="responsive-img" src="images/eat4.png"> -->
+		<i class="large material-icons blue-text">access_time</i>
+		<h5 class="blue-text">Долго живут</h5>
+		<p class="light center blue-text">
+		Свиньи живут до 20 лет и приносят от 2 до 12 поросят в год
+		</p>
+	  </div>
 	</div>
 	<div class="col s12 m4">
+	  <div class="center promo">
+	    <!-- <img class="responsive-img" src="images/eat5.png"> -->
+		<i class="large material-icons blue-text">school</i>
+		<h5 class="blue-text">Умные</h5>
+		<p class="light center blue-text">
+		Свиньи демонстрируют 
+		высокий результат как по параметру сообразительности, 
+		так и по параметру наблюдательности
+		</p>
+	  </div>
 	</div>
 	<div class="col s12 m4">
+	  <div class="center promo">
+	    <!-- <img class="responsive-img" src="images/eat6.jpg"> directions_run -->
+		<i class="large material-icons blue-text">directions_bike</i>
+		<h5 class="blue-text">Быстрые</h5>
+		<p class="light center blue-text">
+		Взрослая свинья пробегает километр за 5 минут
+		</p>
+	  </div>
 	</div>
   </div>
-  <div class="z-depth-2 col s6 offset-s7">
+  </div>
+  <div class="row" id="Block2">
+  <div class="col s12 m8 offset-m2">
+    <p class="center-align font-Raleway flow-text">
+	Заполните анкету и вы получите 
+	всю информацию через несколько минут
+	</p>
+  </div>
+  
+  <div class="z-depth-2 col s12 m6 offset-m3 center-align">
+  <p>Заполните анкету прямо сейчас!</p>
   <div class="col s9 offset-s1">
   <form>
   <div class="row">
@@ -119,30 +163,6 @@ $(window).scroll(function() {
   
   
 </div>
-<footer class="page-footer light-blue lighten-2">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
+
 </body>
 </html>
