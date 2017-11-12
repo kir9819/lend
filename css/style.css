@@ -1,29 +1,4 @@
-﻿/*body {
-	background: url("../images/1.jpg") no-repeat fixed ;
-	background-size: cover;
-	color: white !important;
-}
-.font-Raleway {
-	font-family: "Raleway" !important;
-}
-label {
-	font-family: "Raleway" !important;
-}*/
-
-.scroll_nav {
-	/*height: 20px !important; */
-}
-
-/* body { */
-    /* display: flex; */
-    /* min-height: 100vh; */
-    /* flex-direction: column; */
-  /* } */
-
-  /* main { */
-    /* flex: 1 0 auto; */
-  /* } */
-
+﻿
 body {
 	/*background-color: #e1f5fe;*/
 }
@@ -31,11 +6,13 @@ body {
 	width: 100%;
 }
 
-
-.img-slider {
-	/* background-color: black; */
-	/* opacity: 0.6; */
+/* .vk-img:hover { */
+	/* background-color: lightgrey; */
+/* } */
+.materialboxed {
+	width: 100%;
 }
+
 @font-face {
 	font-family: "Raleway";
 	src: url("../fonts/Raleway-v4020-Thin.otf") format("truetype");
