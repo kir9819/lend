@@ -1,7 +1,7 @@
 $(document).ready(function(){
-	var oldScrollY = 0;
+  var oldScrollY = 0;
   var id = "";
-  var timeScroll = 0;
+  var timeScroll = 2000;
   var check = true;
   
   window.onscroll = function(event){
