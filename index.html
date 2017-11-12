@@ -19,12 +19,11 @@ $(document).ready(function(){
   indicators: false,
   height: a,
   interval: 4000});
-  var s = "min-height: " + a + "px;";
-  var e = document.getElementById("centerBlock");
+  var s = "min-height: " + a + "px;";<!--\n max-height: " + a + "px;";-->
+  document.getElementById("centerBlock").style.cssText=s;
   <!-- $('.three-col').style.minHeight = a; -->
-  e.style.cssText=s;
-  e = document.getElementById("Block1");
-  e.style.cssText=s;
+  document.getElementById("Block1").style.cssText=s;
+  document.getElementById("Block2").style.cssText=s;;
   
   $('.materialboxed').materialbox();
 });
@@ -133,13 +132,12 @@ $(document).ready(function(){
   <div class="row" id="Block2">
   <div class="col s12 m8 offset-m2">
     <p class="center-align font-Raleway flow-text">
-	Заполните анкету и вы получите 
-	всю информацию через несколько минут
+	Найди своего друга !
 	</p>
   </div>
   
   <div class="z-depth-2 col s12 m6 offset-m3 center-align">
-  <p>Начни прямо сейчас!</p>
+  <p>Попробуй прямо сейчас!</p>
   <div class="col s9 offset-s1">
   <form>
   <div class="row">
