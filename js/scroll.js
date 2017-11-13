@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  if (window.innerWidth < 600) {return}
   var oldScrollY = 0;
   var scrolled = 0;
   var id = "";			// id активного элемента для свича
