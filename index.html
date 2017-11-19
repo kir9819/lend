@@ -1,193 +1,186 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-	<title> Специальное предложение </title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no"/>
-	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="shortcut icon" href="images/favicon3.png" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-</head>
-<body>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
-<script> 
-$(document).ready(function(){
-  var a = window.innerHeight;
-  $('.slider').slider({
-  indicators: false,
-  height: a,
-  interval: 4000});
-  var s = "min-height: " + a + "px;";<!--\n max-height: " + a + "px;";-->
-  document.getElementById("centerBlock").style.cssText=s;
-  <!-- $('.three-col').style.minHeight = a; -->
-  document.getElementById("Block1").style.cssText=s;
-  document.getElementById("Block2").style.cssText=s;;
-  
-  $('.materialboxed').materialbox();
-});
-</script>
-<script type="text/javascript" src="js/scroll_nav.js"></script>
-<script type="text/javascript" src="js/scroll.js"></script>
-  <!--SLIDER with 3-4 pict-->
-<div class="slider">
-    <ul class="slides">
-	  <li>
-	    <img class="img-slider" src="images/pig1.jpg">
-		<div class="caption right-align">
-		  <h3>Вам необходимо</h3>
-		  <h5 class="light grey-text text-lighten-3">купить свинью</h5>
+	<head>
+		<title> Специальное предложение </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no"/>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="shortcut icon" href="images/favicon3.png" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	</head>
+	<body>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script> 
+			$(document).ready(function(){
+				var a = window.innerHeight;
+				$('.slider').slider({
+					indicators: false,
+					height: a,
+					interval: 4000});
+				var s = "min-height: " + a + "px;";
+				document.getElementById("centerBlock").style.cssText=s;
+				document.getElementById("Block1").style.cssText=s;
+				document.getElementById("Block2").style.cssText=s;;
+				
+				$('.materialboxed').materialbox();
+			});
+		</script>
+		<script type="text/javascript" src="js/scroll.js"></script> <!--For scrolling-->
+
+			<!--SLIDER with 3-4 pict-->
+
+		<div class="slider">
+				<ul class="slides">
+					<li>
+						<img class="img-slider" src="images/pig1.jpg">
+						<div class="caption right-align">
+							<h3>Вам необходимо</h3>
+							<h5 class="light grey-text text-lighten-3">купить свинью</h5>
+						</div>
+					</li>
+					<li>
+						<img class="img-slider" src="images/pig2.jpg">
+						<div class="caption right-align">
+							<h3>Эти животные рождены,</h3>
+							<h5 class="light grey-text text-lighten-3">чтобы быть вашими друзьями</h5>
+						</div>
+					</li>
+					<li>
+						<img class="img-slider" src="images/pig4.0.png">
+						<div class="caption right-align">
+							<h3>Поросёнок привнесет</h3>
+							<h5 class="light grey-text text-lighten-3">в вашу жизнь милоты</h5>
+						</div>
+					</li>
+				</ul>
 		</div>
+			
+		<!--
+		3 col with icons
+		--> 
 
-	  </li>
-	  <li>
-	    <img class="img-slider" src="images/pig2.jpg">
-		<div class="caption right-align">
-		  <h3>Эти животные рождены,</h3>
-		  <h5 class="light grey-text text-lighten-3">чтобы быть вашими друзьями</h5>
-		  
-		</div>
-	  </li>
-	  <li>
-	    <img class="img-slider" src="images/pig4.0.png">
-		<div class="caption right-align">
-		  <h3>Поросёнок привнесет</h3>
-		  <h5 class="light grey-text text-lighten-3">в вашу жизнь милоты</h5>
-		</div>
-	  </li>
-	</ul>
-  </div>
-  
-<!--
-3 col with icons
---> 
+		<div class="container">
+			<div class="row valign-wrapper" id="centerBlock">
+				<div>
+					<div class="col s12 m4">
+						<div class="center promo">
+							<i class="large material-icons blue-text">access_time</i>
+							<h5 class="blue-text">Долго живут</h5>
+							<p class="light center blue-text flow-text">
+								Свиньи живут до 20 лет и приносят от 2 до 12 поросят в год
+							</p>
+						</div>
+					</div>
+					<div class="col s12 m4">
+						<div class="center promo">
+							<i class="large material-icons blue-text">school</i>
+							<h5 class="blue-text">Умные</h5>
+							<p class="light center blue-text flow-text">
+								Свиньи демонстрируют 
+								высокий результат по сообразительности 
+								и по наблюдательности
+							</p>
+						</div>
+					</div>
+					<div class="col s12 m4">
+						<div class="center promo">
+							<i class="large material-icons blue-text">directions_bike</i>
+							<h5 class="blue-text">Быстрые</h5>
+							<p class="light center blue-text flow-text">
+								Взрослая свинья пробегает километр за 5 минут
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		<!--
+		2 col with pict
+		-->   
+			
+			<div class="row valign-wrapper" id="Block1">
+				<div>
+					<div class="col s12 m8 offset-m2">
+					<p class="deep-orange-text center-align flow-text">
+						Свинина - наиболее широко распространенное мясо в мире,
+						и является одним из самых крупных мировых бизнесов
+					</p>
+					</div>
+					<div></div>
+					<div class="col s12 m6">
+						<div class="center">
+							<img class="materialboxed" src="images/eat2.jpg">
+						</div>
+					</div>
+					<div class="col s12 m6">
+						<div class="center">
+							<img class="materialboxed" src="images/eat8.jpeg">
+						</div>
+					</div>
+				</div>
+			</div>
 
-<div class="container">
-  <div class="row valign-wrapper" id="centerBlock">
-  <div>
-    <div class="col s12 m4">
-	  <div class="center promo">
-	    <!-- <img class="responsive-img" src="images/eat4.png"> -->
-		<i class="large material-icons blue-text">access_time</i>
-		<h5 class="blue-text">Долго живут</h5>
-		<p class="light center blue-text flow-text">
-		Свиньи живут до 20 лет и приносят от 2 до 12 поросят в год
-		</p>
-	  </div>
-	</div>
-	<div class="col s12 m4">
-	  <div class="center promo">
-	    <!-- <img class="responsive-img" src="images/eat5.png"> -->
-		<i class="large material-icons blue-text">school</i>
-		<h5 class="blue-text">Умные</h5>
-		<p class="light center blue-text flow-text">
-		Свиньи демонстрируют 
-		высокий результат по сообразительности 
-		и по наблюдательности
-		</p>
-	  </div>
-	</div>
-	<div class="col s12 m4">
-	  <div class="center promo">
-	    <!-- <img class="responsive-img" src="images/eat6.jpg"> directions_run -->
-		<i class="large material-icons blue-text">directions_bike</i>
-		<h5 class="blue-text">Быстрые</h5>
-		<p class="light center blue-text flow-text">
-		Взрослая свинья пробегает километр за 5 минут
-		</p>
-	  </div>
-	</div>
-  </div>
-  </div>
-  
-<!--
-2 col with pict
--->   
-  
-  <div class="row valign-wrapper" id="Block1">
-    <div>
-      <div class="col s12 m8 offset-m2">
-	    <p class="deep-orange-text center-align flow-text">Свинина - наиболее широко распространенное мясо в мире,
-	    и является одним из самых крупных мировых бизнесов</p>
-	  </div>
-	  <div></div>
-	  <div class="col s12 m6">
-	    <div class="center">
-	      <img class="materialboxed" src="images/eat2.jpg">
-	    </div>
-	  </div>
-	  <div class="col s12 m6">
-	    <div class="center">
-	      <img class="materialboxed" src="images/eat8.jpeg">
-	    </div>
-	  </div>
-	</div>
-  </div>
+		<!--
+		Анкета
+		--> 
+			
+			<div class="row valign-wrapper" id="Block2">
+				<div class="col s12">
+					<div class="col s12 m8 offset-m2">
+						<p class="center-align font-Raleway flow-text">
+							Найди своего друга !
+						</p>
+					</div>
+					
+					<div class="z-depth-2 col s12 m6 offset-m3 center-align">
+						<p>Попробуй прямо сейчас!</p>
+						<div class="col s9 offset-s1">
+							<form>
+								<div class="row">
+									<div class="input-field">
+										<input type="text" class="validate" name="name" id="name_user">
+										<label for="name_user">Имя</label>
+									</div>
+									<div class="input-field">
+										<input type="email" class="validate" name="email" id="email-user">
+										<label for="email-user" data-error="wrong" data-success="right">E-mail</label>
+									</div>
+									<div class="input-field">
+										<input type="tel" class="validate" name="phone_num" id="phone_num_user">
+										<label for "phone_num_user">Телефон</label>
+									</div>
+									<div class="input-field">
+										<textarea class="materialize-textarea" rows="3" name="other_information" id="other_information_user"></textarea>
+										<label for="other_information_user">Доп. информация</label>
+									</div>
+									<p>
+										<input class="filled-in blue" type="checkbox" name="get_messages" id="get_msg_user" checked="checked">
+										<label for="get_msg_user">Получать рассылку
+									</p>
+									<button type="submit" class="btn btn-default">Отправить</button>
+								</div>
+							</form>
+						</div>
+					</div>	
+				</div>
+			</div> <!--Block2-->
+		</div> <!--container-->
 
-<!--
-Анкета
---> 
-  
-  <div class="row valign-wrapper" id="Block2">
-  <div class="col s12">
-  <div class="col s12 m8 offset-m2">
-    <p class="center-align font-Raleway flow-text">
-	Найди своего друга !
-	</p>
-  </div>
-  
-  <div class="z-depth-2 col s12 m6 offset-m3 center-align">
-  <p>Попробуй прямо сейчас!</p>
-  <div class="col s9 offset-s1">
-  <form>
-  <div class="row">
-	<div class="input-field">
-		<input type="text" class="validate" name="name" id="name_user">
-		<label for="name_user">Имя</label>
-	</div>
-	<div class="input-field">
-		<input type="email" class="validate" name="email" id="email-user">
-		<label for="email-user" data-error="wrong" data-success="right">E-mail</label>
-	</div>
-	<div class="input-field">
-		<input type="tel" class="validate" name="phone_num" id="phone_num_user">
-		<label for "phone_num_user">Телефон</label>
-	</div>
-	<div class="input-field">
-		<textarea class="materialize-textarea" rows="3" name="other_information" id="other_information_user"></textarea>
-		<label for="other_information_user">Доп. информация</label>
-	</div>
-	<p>
-		<input class="filled-in blue" type="checkbox" name="get_messages" id="get_msg_user" checked="checked">
-		<label for="get_msg_user">Получать рассылку
-	</p>
-	<button type="submit" class="btn btn-default">Отправить</button>
-  </div>
-  </form>
-  </div>
-  </div>	
-  </div>
-  </div> <!--Block2-->
-</div> <!--container-->
-
-<footer class="page-footer grey lighten-4" id="footer">
-  <div class="footer-copyright grey lighten-4">
-    <div class="container">
-	  <div class="row">
-	    
-	      <h6 class="center-align condensed light black-text">© KiR 2017</h6>
-		  <div class="center-align">
-	        <a class="center-align hide-on-small-only" target="_blank" href="https://vk.com/lli_9">
-		      <img src="images/vk.svg" width="40px" alt="Вконтакте" class="vk-img circle responsive-img">
-	        </a>
-	      </div>
-		
-	  </div>
-	</div>
-  </div>
-</footer>
-
-
-</body>
+		<footer class="page-footer grey lighten-4" id="footer">
+			<div class="footer-copyright grey lighten-4">
+				<div class="container">
+					<div class="row">
+						<h6 class="center-align condensed light black-text">© KiR 2017</h6>
+						<div class="center-align">
+							<a class="center-align hide-on-small-only" target="_blank" href="https://vk.com/lli_9">
+							<img src="images/vk.svg" width="40px" alt="Вконтакте" class="vk-img circle responsive-img">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
