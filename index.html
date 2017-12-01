@@ -28,7 +28,26 @@
 			});
 		</script>
 		<script type="text/javascript" src="js/scroll.js"></script> <!--For scrolling-->
-
+		<script>
+		$( document ).ready(function() {
+			$('#osForm').submit(function(e){
+				e.preventDefault();
+				$.ajax({
+					url: "https://kir9.000webhostapp.com/getFormLend.php",
+					type: "POST",
+					data: $('#osForm').serializeArray(),
+					success: function(response) {
+						console.log("ok");
+						//обработка успешной отправки
+					},
+					error: function(response) {
+						console.log("bad");
+						//обработка ошибок при отправке
+					}
+				});
+			});
+		})	
+		</script>
 			<!--SLIDER with 3-4 pict-->
 
 		<div class="slider">
@@ -137,7 +156,7 @@
 					<div class="z-depth-2 col s12 m6 offset-m3 center-align">
 						<p>Попробуй прямо сейчас!</p>
 						<div class="col s9 offset-s1">
-							<form>
+							<form action="#" method="post" id="osForm">
 								<div class="row">
 									<div class="input-field">
 										<input type="text" class="validate" name="name" id="name_user">
